@@ -9,13 +9,13 @@ function calculator() {
     let operator = args[2];
     let numbers = args.slice(3).map(Number);
     let result = 0;
-
-    if (operator === "divide") {
-        return `Invalid operation: divide`
-    }
     
     if (args.length < 3) {
         return `No operation provided...`;
+    }
+
+    if (operator !== "plus" && operator !== "minus") {
+        return `Invalid operation: ${operator}`
     }
 
     if (args.length < 4) {
