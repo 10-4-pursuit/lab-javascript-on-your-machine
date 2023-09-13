@@ -4,7 +4,11 @@
  * Depending on the operation, either add up all of the numbers or subtract all of the numbers, from left to right.
  * @returns {number} The result of either adding all numbers or subtracting all numbers, depending on the arguments added to the command line.
  */
-function calculator() {}
+function calculator() {
+    return Number(process.argv[3])+ Number(process.argv[4])
+}
+console.log(calculator());
+
 
 // Don't change anything below this line.
 module.exports = calculator;
