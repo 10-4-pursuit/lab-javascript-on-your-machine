@@ -81,7 +81,7 @@ The following are examples of what should happen when running the code from the 
 **Command line**
 
 ```
-node index.js plus 1 2 3 4 5
+node run.js plus 1 2 3 4 5
 ```
 
 **Result**
@@ -95,7 +95,7 @@ node index.js plus 1 2 3 4 5
 **Command line**
 
 ```
-node index.js minus 10 5 1
+node run.js minus 10 5 1
 ```
 
 **Result**
@@ -109,7 +109,7 @@ node index.js minus 10 5 1
 **Command line**
 
 ```
-node index.js divide 10 2
+node run.js divide 10 2
 ```
 
 **Result**
@@ -123,7 +123,7 @@ node index.js divide 10 2
 **Command line**
 
 ```
-node index.js minus
+node run.js minus
 ```
 
 **Result**
