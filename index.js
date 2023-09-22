@@ -5,8 +5,8 @@
  * @returns {number} The result of either adding all numbers or subtracting all numbers, depending on the arguments added to the command line.
  */
 function calculator() {
-    const operation = process.argv[2];
-    const numbers = process.argv.slice(3).map(Number);
+     const operation = process.argv[2];
+     const numbers = process.argv.slice(3).map(Number);
   
     if (!operation) {
         return "No operation provided...";
@@ -21,9 +21,9 @@ function calculator() {
       }
 
     if (operation === "plus") {
-      return numbers.reduce((acc, curr) => acc + curr, 0);
+      return numbers.reduce((a, b) => a + b, 0);
     } else if (operation === "minus") {
-      return numbers.reduce((acc, curr) => acc - curr);
+      return numbers.reduce((a, b) => a - b);
     } else {
       console.error("Invalid operation. Use either 'plus' or 'minus'.");
       return null;
